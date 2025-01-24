@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Heading */
+.heading {
+    margin: -8.5%;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Password Input */
+.input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    outline: none;
+    margin-bottom: 20px;
+    margin-left: -4%;
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+    
+}
+
+.input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Copy Button */
+.btn-copy {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.btn-copy:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 75, 43, 0.5);
+}
+
+/* Slider Container */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.features label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.slider {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.slider:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff4b2b;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Checkbox Section */
+.cheaked {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cheaked label {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cheaked input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    accent-color: #ff4b2b;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2rem;
+        margin: 5%;
+        margin-bottom: 25%;
+        text-align: center;
+        
+    }
+
+    .container {
+       margin-left: 4.5%;
+    }
+
+    .input {
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin-left: -6%;
+    }
+
+    .btn-copy {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .features label,
+    .cheaked label {
+        font-size: 0.8rem;
+    }
+}

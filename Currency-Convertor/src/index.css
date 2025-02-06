@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* styles.css */
+.bg-glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bg-glass:hover {
+    transform: scale(1.02);
+  }
+  
+  .input-field {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .input-field:focus {
+    border-color: #4A90E2;
+    outline: none;
+  }
+  
+  .converted-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2C3E50;
+  }
+  
+  .container-bg {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
